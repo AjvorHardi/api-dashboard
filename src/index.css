@@ -1,0 +1,65 @@
+:root {
+  color: #eef7fb;
+  background:
+    radial-gradient(circle at top left, rgba(101, 217, 195, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(246, 182, 108, 0.16), transparent 26%),
+    linear-gradient(180deg, #07131b 0%, #041017 100%);
+  color-scheme: dark;
+  font-family:
+    "IBM Plex Sans",
+    "Segoe UI",
+    sans-serif;
+  font-synthesis: none;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --accent-strong: #8ef0dd;
+  --muted-text: #9fb0bf;
+  --panel: rgba(10, 22, 31, 0.76);
+  --panel-border: rgba(132, 158, 179, 0.12);
+  --panel-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  --text-main: #eef7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text-main);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), transparent);
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
